@@ -5,9 +5,11 @@
    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
    
 <mapper namespace="com.kjh.home.dao.Mapper">
-	<insert id="joindao">
-		INSERT INTO batis_member(mid, mpw, mname, memail) VALUES (#{param1},{param2},{param3},{param4})
+	<insert id="joinDao">
+		INSERT INTO batis_member(mid, mpw, mname, memail) VALUES (#{param1},#{param2},#{param3},#{param4})
 	</insert>
-
-
+	<select id="logincheck" resultType="int">
+		SELECT COUNT(*) FROM batis_member WHERE mid=#{param1} AND mpw=#{param2}
+	</select>
+	
 </mapper>
