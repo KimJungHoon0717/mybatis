@@ -9,7 +9,7 @@
 		INSERT INTO batis_member(mid, mpw, mname, memail) VALUES (#{param1},#{param2},#{param3},#{param4})
 	</insert>
 	<select id="logincheck" resultType="int">
-		SELECT COUNT(*) FROM batis_member WHERE mid=#{param1} AND mpw=#{param2}
+		SELECT COUNT(*) FROM batis_member WHERE mid=#{param1} and mpw=#{param2}
 	</select>
 	
 </mapper>
