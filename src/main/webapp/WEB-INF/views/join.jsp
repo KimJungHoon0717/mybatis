@@ -11,7 +11,7 @@
 	<hr>
 	<form action="joinOk" method="post">
 		아이디 : <input type="text" name="mid"> <br><br>
-		비밀번호 : <input type="password" name="mpw"> <br><br>
+		비밀번호 : <input type="Password" name="mpw"> <br><br>
 		이름 : <input type="text" name="mname"> <br><br>
 		이메일 : <input type="text" name="memail"> <br><br>
 			<input type="submit" value="회원가입">

@@ -6,7 +6,7 @@ public class BoardDto {
 	private int bid;//게시판 번호
 	private String btitle;//게시판 글 제목
 	private String bcontent;//게시판 글 내용
-	private int bhit;// 조회수
+	// 조회수
 	private String bmid;// 글쓴사람 아이디
 	private String bmname;//글쓴사람 이름
 	private Timestamp bdate;//글쓴 일시
@@ -19,7 +19,6 @@ public class BoardDto {
 		this.bid = bid;
 		this.btitle = btitle;
 		this.bcontent = bcontent;
-		this.bhit = bhit;
 		this.bmid = bmid;
 		this.bmname = bmname;
 		this.bdate = bdate;
@@ -42,12 +41,7 @@ public class BoardDto {
 	public void setBcontent(String bcontent) {
 		this.bcontent = bcontent;
 	}
-	public int getBhit() {
-		return bhit;
-	}
-	public void setBhit(int bhit) {
-		this.bhit = bhit;
-	}
+	
 	public String getBmid() {
 		return bmid;
 	}
